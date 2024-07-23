@@ -10,6 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ch3/control-flow/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch3/function-work/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch4/references/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch4/slice/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/ch1/hello-cargo/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch1/hello-world/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch2/guessing-game/target" />
@@ -18,6 +19,7 @@
       <excludeFolder url="file://$MODULE_DIR$/ch3/control-flow/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch3/function-work/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch4/references/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ch4/slice/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
