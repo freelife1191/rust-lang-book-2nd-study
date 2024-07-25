@@ -15,6 +15,8 @@
       <sourceFolder url="file://$MODULE_DIR$/ch5/rectangles/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch5/structs-using/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch5/methods/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch6/enums/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch6/matches/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/ch1/hello-cargo/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch1/hello-world/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch2/guessing-game/target" />
@@ -28,6 +30,8 @@
       <excludeFolder url="file://$MODULE_DIR$/ch5/rectangles/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch5/structs-using/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch5/methods/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ch6/enums/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ch6/matches/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
