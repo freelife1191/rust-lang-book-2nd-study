@@ -17,6 +17,9 @@
       <sourceFolder url="file://$MODULE_DIR$/ch5/methods/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch6/enums/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch6/matches/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch6/iflet/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch7/backyard/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch7/restaurant/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/ch1/hello-cargo/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch1/hello-world/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch2/guessing-game/target" />
@@ -32,6 +35,9 @@
       <excludeFolder url="file://$MODULE_DIR$/ch5/methods/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch6/enums/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch6/matches/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ch6/iflet/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ch7/backyard/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ch7/restaurant/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -26,6 +26,11 @@ impl Message {
     }
 }
 
+enum Option<T> {
+    Some(T),
+    None,
+}
+
 fn main() {
     let home = IpAddr {
         kind: IpAddrKind::V4,
@@ -40,4 +45,9 @@ fn main() {
     let m = Message::Write(String::from("hello"));
     // println!("m: {:?}",m)
     m.call();
+
+    let some_number = Some(5);
+    let some_char = Some("e");
+    // let absent_number: Option<i32> = None;
+    println!("some_number: {:?}, some_char: {:?}", some_number, some_char);
 }
