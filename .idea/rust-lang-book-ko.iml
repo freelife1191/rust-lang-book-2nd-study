@@ -23,6 +23,11 @@
       <sourceFolder url="file://$MODULE_DIR$/ch8/vectors/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch8/hashmaps/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch8/strings/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch10/aggregator/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch10/generic_data_type/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch10/generics/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch10/lifetimes/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch10/traits/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch9/panics/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch9/results/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/ch1/hello-cargo/target" />
@@ -46,6 +51,11 @@
       <excludeFolder url="file://$MODULE_DIR$/ch8/vectors/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch8/hashmaps/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch8/strings/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ch10/aggregator/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ch10/generic_data_type/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ch10/generics/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ch10/lifetimes/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ch10/traits/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch9/panics/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch9/results/target" />
     </content>
