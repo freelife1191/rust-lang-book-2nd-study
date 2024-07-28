@@ -23,6 +23,8 @@
       <sourceFolder url="file://$MODULE_DIR$/ch8/vectors/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch8/hashmaps/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch8/strings/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch9/panics/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch9/results/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/ch1/hello-cargo/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch1/hello-world/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch2/guessing-game/target" />
@@ -44,6 +46,8 @@
       <excludeFolder url="file://$MODULE_DIR$/ch8/vectors/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch8/hashmaps/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch8/strings/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ch9/panics/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ch9/results/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
