@@ -1,6 +1,32 @@
 # The Rust Programming Language Second Edition
 
-https://rinthel.github.io/rust-lang-book-ko/
+## Rust 문서
+
+- 커뮤니티 번역본: https://doc.rust-kr.org/
+- 원본 영문: https://doc.rust-lang.org/stable/book/
+- 상호작용 버전: https://rust-book.cs.brown.edu/
+- 표준 라이브러리 문서: https://www.rust-lang.org/learn
+- Rust API Document: https://doc.rust-lang.org/std/
+- Rust Project: https://www.rust-lang.org/
+- Rust Document: https://doc.rust-lang.org/beta/
+  - Rust Reference: https://doc.rust-lang.org/beta/reference/index.html
+  - The Edition Guide: https://doc.rust-lang.org/beta/edition-guide/editions/index.html
+  - The Release Notes: https://doc.rust-lang.org/beta/releases.html
+  - The rustc Book: https://doc.rust-lang.org/rustc/
+  - The Cargo Book: https://doc.rust-lang.org/beta/cargo/index.html
+  - The Rustdoc Book: https://doc.rust-lang.org/beta/rustdoc/index.html
+  - The Clippy Book: https://doc.rust-lang.org/beta/clippy/index.html
+  - rustc error codes: https://doc.rust-lang.org/beta/error_codes/index.html
+  - The Style Guide: https://doc.rust-lang.org/beta/style-guide/index.html
+  - The Rustonomicon: https://doc.rust-lang.org/beta/nomicon/index.html
+  - The Unstable Book: https://doc.rust-lang.org/beta/unstable-book/index.html
+  - Rust Compiler Developer Guide: https://rustc-dev-guide.rust-lang.org/
+  - Rust Embedded: https://github.com/rust-embedded
+  - The Embedded Rust Book: https://doc.rust-lang.org/beta/embedded-book/index.html
+- Rust Docs 검색: https://docs.rs/
+- Rust Playground: https://play.rust-lang.org/?version=stable&mode=debug&edition=2021
+- Rust 예제: https://doc.rust-lang.org/rust-by-example/
+- Rust 예제 & 해답: https://github.com/rust-lang/rustlings
 
 ## Ownership
 러스트의 가장 유니크한 특성, 러스트가 가비지 콜렉터 없이 메모리 안정성 보장을 하게 해준다
@@ -9,7 +35,7 @@ https://rinthel.github.io/rust-lang-book-ko/
 메모리는 컴파일 타임에 컴파일러가 체크할 규칙들로 구성된 소유권 시스템을 통해 관리된다
 소유권 기능들의 어떤 것도 런타임 비용이 발생하지 않는다
 
-### 스택과 힙
+#### 스택과 힙
 
 - Stack: LIFO(Last In First Out) 구조, 빠르지만 크기가 컴파일 타임에 결정된다
   - 데이터를 추가하는 것 스택에 푸시하기(pushing on to the stack)
@@ -37,12 +63,12 @@ https://rinthel.github.io/rust-lang-book-ko/
 
 힙 데이터를 관리하는 것이 곧 소유권의 존재 이유이다
 
-### 소유권 규칙
+#### 소유권 규칙
 - 러스트의 각각의 값은 해당값의 소유자(owner)라고 불리우는 변수를 갖고 있다
 - 한번에 딱 하나의 오너만 존재할 수 있다
 - 오너가 스코프 밖으로 벗어나는 때, 값은 버려진다(dropped)
 
-### String 타입
+#### String 타입
 
 String Literal로 부터 `from` 이라는 함수를 이용해서 `String`을 만들 수 있다
 
@@ -58,7 +84,7 @@ s.push_str(", world!"); // push_str()은 해당 스트링 리터럴을 스트링
 println!("{}", s); // 이 부분이 `hello, world!`를 출력한다
 ```
 
-### 메모리와 할당
+#### 메모리와 할당
 
 러스트는 메모리는 변수가 소속되어 있는 스코프 밖으로 벗어나는 순간 자동으로 반납된다
 
@@ -69,7 +95,7 @@ println!("{}", s); // 이 부분이 `hello, world!`를 출력한다
 } // 이 스코프는 끝났고, s는 더이상 유효하지 않다
 ```
 
-### 가변 참조자(Mutable References)
+#### 가변 참조자(Mutable References)
 
 - 가변 참조자의 딱 한가지 큰 제한
   - 특정한 스코프 내에 특정한 데이터 조각에 대한 가변 참조자를 딱 하나만 만들 수 있다
@@ -159,7 +185,7 @@ fn no_dangle() -> String {
     - 절대 경로: 크레이트 루트부터 시작하는 경로
     - 상대 경로: 현재 모듈부터 시작하는 경로
 
-### 모듈 치트 시트
+#### 모듈 치트 시트
 
 - 크레이트 루트부터 시작: 크레이트를 컴파일할 때 컴파일러는 먼저 크레이트 루트 파일을 본다
   - 라이브러리 크레이트: `src/lib.rs`
@@ -177,13 +203,18 @@ fn no_dangle() -> String {
 
 ## 7.3 경로를 사용하여 모듈 트리의 아이템 참조하기
 
+---
+
 - 절대 경로(absolute path): 크레이트 루트부터 시작하는 경로
   - `crate` - 크레이트 루트
 - 상대 경로(relative path): 현재 모듈부터 시작하는 경로
   - `self` - 현재 모듈
   - `super` - 부모 모듈
 
+
 ## 에러 처리
+
+---
 
 대부분의 언어는 예외 처리 (exception) 와 같은 메커니즘을 이용하여 이 두 종류의 에러를 구분하지 않고 같은 방식으로 처리한다  
 러스트에는 예외 처리 기능이 없다  
@@ -209,13 +240,13 @@ $ RUST_BACKTRACE=1 cargo run
 실패할지도 모르는 함수를 정의할 때는 기본적으로 Result를 반환하는 것이 좋은 선택  
 예제, 프로토타입, 테스트 같은 상황에서는 Result를 반환하는 대신 패닉을 일으키는 코드가 더 적절함
 
-### 에러 처리를 위한 가이드라인
+#### 에러 처리를 위한 가이드라인
 
 - 이 나쁜 상태란 것은 예기치 못한 무언가이며, 이는 사용자가 입력한 데이터가 잘못된 형식이라던가 하는 흔히 발생할 수 있는 것과는 반대되는 것이다
 - 그 시점 이후의 코드는 매번 해당 문제에 대한 검사를 하는 것이 아니라, 이 나쁜 상태에 있지 않아야만 할 필요가 있다
 - 사용하고 있는 타입 내에 이 정보를 집어넣을만한 뾰족한 수가 없다
 
-### 유효성을 위한 커스텀 타입 생성하기
+#### 유효성을 위한 커스텀 타입 생성하기
 
 ```rust
 pub struct Guess {
@@ -240,18 +271,20 @@ impl Guess {
 
 ## 제네릭 타입, 트레이트, 라이프타임
 
+---
+
 - 중복된 코드를 식별
 - 중복된 코드를 함수의 본문으로 분리하고, 함수의 시그니처 내에 해당 코드의 입력값 및 반환 값을 명시
 - 중복됐었던 두 지점의 코드를 함수 호출로 변경
 
-### 제네릭 코드의 성능
+#### 제네릭 코드의 성능
 
 러스트는 컴파일 타임에 제네릭을 사용하는 코드를 단형성화(monomorphization) 한다  
 단형성화란 제네릭 코드를 실제 구체 타입으로 채워진 특정한 코드로 바꾸는 과정을 말한다
 
 단형성화 과정은 러스트 제네릭을 런타임에 극도로 효율적으로 만들어준다
 
-### 트레이트로 공통된 동작을 정의하기
+#### 트레이트로 공통된 동작을 정의하기
 
 - 트레이트(trait) 는 특정한 타입이 가지고 있으면서 다른 타입과 공유할 수 있는 기능을 정의한다
 - 트레이트를 사용하면 공통된 기능을 추상적으로 정의할 수 있다
@@ -259,13 +292,13 @@ impl Guess {
 
 약간의 차이는 있으나, 트레이트는 다른 언어에서 흔히 인터페이스 (interface) 라고 부르는 기능과 유사하다
 
-### 라이프타임 명시 문법
+#### 라이프타임 명시 문법
 
 `&i32`        // 참조자
 `&'a i32`     // 명시적인 라이프타임이 있는 참조자
 `&'a mut i32` // 명시적인 라이프타임이 있는 가변 참조자
 
-### 정적 라이프 타임
+#### 정적 라이프 타임
 
 정적 라이프타임 (static lifetime), `static`이라는 특별한 라이프타임  
 `static` 라이프타임은 해당 참조자가 프로그램의 전체 생애주기 동안 살아있음을 의미  
@@ -274,3 +307,130 @@ impl Guess {
 ```rust
 let s: &'static str = "I have a static lifetime.";
 ```
+
+## 11. 자동화 테스트 작성하기
+
+---
+
+### 테스트 작성 방법
+
+#### assert! 매크로 결과 검사하기
+어떤 조건이 true임을 보장하는 테스트를 작성할 땐 표준 라이브러리가 제공하는 assert! 매크로가 유용  
+`assert_eq!`, `assert_ne!` 매크로는 각각 두 인수를 비교하고 동등한지 (equality) 그렇지 않은지 (inequality) 판단  
+
+내부적으로 `assert_eq!`, `assert_ne!` 매크로는 각각 ==, != 연산자를 사용  
+매크로는 인수를 디버그 형식으로 출력하는데, 즉 `assert_eq!`, `assert_ne!` 매크로로 비교할 값은 `PartialEq`, `Debug` 트레이트를 구현해야 한다  
+`#[derive(PartialEq, Debug)]`를 어노테이션하는 것이 일반적
+
+
+### 테스트 실행 방법 제어하기
+
+#### 테스트를 병렬 혹은 순차적으로 실행하기
+
+테스트를 병렬로 실행하고 싶지 않거나, 사용할 스레드의 개수에 대한 미세 조정이 필요한 경우에는 `--test-threads` 플래그와 함께 테스트 바이너리에서 사용할 스레드 개수를 지정할 수 있다
+
+스레드 개수를 1로 설정하여 프로그램이 어떠한 병렬 처리도 사용하지 않도록 하였다
+```shell
+$ cargo test -- --test-threads=1
+```
+
+#### 함수 출력 표시하기
+
+기본적으로, 러스트 테스트 라이브러리는 성공한 테스트의 모든 표준 출력(standard output) 을 캡처한다  
+테스트에서 `println!` 매크로를 호출해도, 해당 테스트가 성공하면 터미널에서 `println!`의 출력을 찾아볼 수 없다
+
+`println!`을 호출하는 함수 테스트
+```rust
+fn prints_and_returns_10(a: i32) -> i32 {
+  println!("I got the value {}", a);
+  10
+}
+
+#[cfg(test)]
+mod tests {
+  use super::*;
+
+  #[test]
+  fn this_test_will_pass() {
+    let value = prints_and_returns_10(4);
+    assert_eq!(10, value);
+  }
+
+  #[test]
+  fn this_test_will_fail() {
+    let value = prints_and_returns_10(8);
+    assert_eq!(5, value);
+  }
+}
+```
+
+성공한 테스트에서 출력한 내용도 보고 싶다면, 러스트에게 `--show-output` 옵션을 전달하여 성공한 테스트의 출력도 표시하도록 할 수 있다
+
+```shell
+$ cargo test -- --show-output
+```
+
+테스트를 아무 인수도 없이 실행하면 모든 테스트가 병렬로 실행된다
+
+#### 테스트 하나만 실행하기
+
+```shell
+$ cargo test one_hundred
+```
+
+#### 테스트를 필터링하여 여러 테스트 실행하기
+
+```shell
+$ cargo test add
+```
+
+#### 특별 요청이 없다면 일부 테스트 무시하기
+
+`cargo test -- --ignored` 명령어를 사용하면 무시된 테스트만 실행할 수 있다  
+무시되었건 말건 간에 모든 테스트를 실행하고 싶다면 `cargo test -- --include-ignored`를 실행
+
+```rust
+#[test]
+fn it_works() {
+  assert_eq!(2 + 2, 4);
+}
+
+#[test]
+#[ignore]
+fn expensive_test() {
+    // code that takes an hour to run
+}
+```
+
+### 테스트 조직화
+
+#### 유닛 테스트
+
+`#[cfg(test)]`은 이 코드가 cargo build 명령어가 아닌 cargo test 명령어 실행 시에만 컴파일 및 실행될 것을 러스트에게 전달한다  
+라이브러리 빌드 시 테스트 코드는 제외되므로, 컴파일 소요 시간이 짧아지고, 컴파일 결과물 크기도 줄어든다
+
+비공개 함수 테스트하기
+```rust
+pub fn add_two(a: i32) -> i32 {
+    internal_adder(a, 2)
+}
+
+fn internal_adder(a: i32, b: i32) -> i32 {
+    a + b
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn internal() {
+        assert_eq!(4, internal_adder(2, 2));
+    }
+}
+```
+
+#### 통합 테스트
+
+프로젝트 디렉터리 최상위, 다시 말해 src 옆에 tests 디렉터리를 생성한다  
+카고는 디렉터리 내 통합 테스트 파일을 자동으로 인식한다

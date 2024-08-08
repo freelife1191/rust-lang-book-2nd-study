@@ -30,6 +30,8 @@
       <sourceFolder url="file://$MODULE_DIR$/ch10/traits/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch9/panics/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch9/results/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch11/adder/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch11/adder/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/ch1/hello-cargo/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch1/hello-world/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch2/guessing-game/target" />
@@ -58,6 +60,7 @@
       <excludeFolder url="file://$MODULE_DIR$/ch10/traits/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch9/panics/target" />
       <excludeFolder url="file://$MODULE_DIR$/ch9/results/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ch11/adder/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
