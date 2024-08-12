@@ -38,6 +38,8 @@
 - Rust 예제: https://doc.rust-lang.org/rust-by-example/
 - Rust 예제 & 해답: https://github.com/rust-lang/rustlings
   - https://github.imc.re/topics/rustlings-solution?o=asc&s=stars
+- Rust By Practice: https://practice.course.rs/why-exercise.html
+- 100 Exercises To Learn Rust: https://rust-exercises.com/100-exercises/
 
 ## Ownership
 러스트의 가장 유니크한 특성, 러스트가 가비지 콜렉터 없이 메모리 안정성 보장을 하게 해준다
