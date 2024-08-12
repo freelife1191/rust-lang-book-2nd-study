@@ -2,9 +2,19 @@
 
 ## Rust 문서
 
-- 커뮤니티 번역본: https://doc.rust-kr.org/
-- 원본 영문: https://doc.rust-lang.org/stable/book/
-- 상호작용 버전: https://rust-book.cs.brown.edu/
+- 러스트 북 커뮤니티 번역본: https://doc.rust-kr.org/
+- 러스트 북 원본 영문: https://doc.rust-lang.org/stable/book/
+- 러스트 북 Summary: https://codeahoy.com/learn/tutorials/rust-book-summary/
+- 러스트 북 Example Solutions
+  - https://github.com/kmoschcau/rust-book-exercises
+  - https://github.com/olehmisar/The-Rust-Programming-Language-Book-Solutions
+  - https://github.com/laercioxlaercio/rust
+  - https://github.com/kevinalh/rust-book
+  - https://github.com/klemola/rust-book
+  - https://github.com/jasonkuhrt-archive/rust-book-exercises
+  - https://github.com/Lukman-01/rust-learn-by-practice
+  - https://github.com/rust-unofficial/rust-practise-questions/tree/master/src
+- 러스트 북 Quiz 버전: https://rust-book.cs.brown.edu/
 - 표준 라이브러리 문서: https://www.rust-lang.org/learn
 - Rust API Document: https://doc.rust-lang.org/std/
 - Rust Project: https://www.rust-lang.org/
@@ -27,6 +37,7 @@
 - Rust Playground: https://play.rust-lang.org/?version=stable&mode=debug&edition=2021
 - Rust 예제: https://doc.rust-lang.org/rust-by-example/
 - Rust 예제 & 해답: https://github.com/rust-lang/rustlings
+  - https://github.imc.re/topics/rustlings-solution?o=asc&s=stars
 
 ## Ownership
 러스트의 가장 유니크한 특성, 러스트가 가비지 콜렉터 없이 메모리 안정성 보장을 하게 해준다
